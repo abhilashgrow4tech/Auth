@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Verification</title>
+</head>
+<body>
+    <div class="form-container">
+        <input type="text" id="phoneNumber" placeholder="Enter phone number" required>
+        <button id="sendOtp">Send OTP</button>
+        
+        <div id="recaptcha-container"></div> <!-- reCAPTCHA container -->
+        
+        <div id="otpSection" style="display:none;">
+            <input type="text" id="otpCode" placeholder="Enter OTP">
+            <button id="verifyOtp">Verify OTP</button>
+            <div id="countdown"></div>
+        </div>
+    </div>
+
+    <script type="module" src="firebase-auth.js"></script>
+</body>
+</html>
